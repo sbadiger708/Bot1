@@ -1,0 +1,595 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+.tb-buttons {
+    text-align: right;
+    padding-top: 15px
+}
+
+.tb-buttons a {
+    outline: 0;
+    width: auto;
+    height: 32px;
+    color: #333;
+    padding: 0 15px;
+    font-size: 12px;
+    overflow: visible;
+    vertical-align: top;
+    line-height: 32px;
+    border: 0;
+    background-color: #E0E2E3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.tb-buttons .tblue {
+    background-color: #156BA5;
+    color: #fff
+}
+
+.tb-buttons .tblue:hover {
+    background-color: #0F4F79
+}
+
+.tb-buttons .torange {
+    background-color: #F58220;
+    color: #fff
+}
+
+#search {
+    background: #F1F2F3;
+    padding: 20px 0 5px;
+    border-top: 1px solid #fff;
+    background-image: -webkit-gradient(linear, left 0, left 100%, from(#eeedea), to(#FFF));
+    background-image: -webkit-linear-gradient(top, #eeedea, 0, #FFF, 100%);
+    background-image: -moz-linear-gradient(top, #eeedea 0, #FFF 100%);
+    background-image: linear-gradient(to bottom, #eeedea 0, #FFF 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffeeedea', endColorstr='#ffffffff', GradientType=0)
+}
+
+.stb {
+    padding-top: 10px;
+    margin-bottom: 0
+}
+
+.wide-container {
+    max-width: 100%;
+    height: 560px;
+    margin: 0 auto;
+    background: #eee;
+    position: relative;
+    z-index: 10
+}
+
+.loading-container {
+    position: absolute;
+    z-index: 5;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.plulse {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 45%;
+    left: 45%;
+    background: url(../images/preloadr.GIF) center no-repeat
+}
+
+#slides,
+.main-slider {
+    position: relative
+}
+
+#the-slider {
+    -webkit-box-shadow: inset 0 10px 8px -10px rgba(0, 0, 0, .8), inset 0 -10px 8px -10px rgba(0, 0, 0, .7);
+    -moz-box-shadow: inset 0 10px 8px -10px rgba(0, 0, 0, .8), inset 0 -10px 8px -10px rgba(0, 0, 0, .7);
+    box-shadow: inset 0 10px 8px -10px rgba(0, 0, 0, .8), inset 0 -10px 8px -10px rgba(0, 0, 0, .7);
+    max-width: 100%
+}
+
+#slides .slides-container {
+    display: none
+}
+
+#slides .scrollable {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%
+}
+
+#slides .scrollable:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.slides-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    width: 100%
+}
+
+.slides-navigation a {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px
+}
+
+.slides-navigation a:hover {
+    color: #0063D1;
+    border: 2px solid #0063D1
+}
+
+.slides-navigation a.prev {
+    left: 40px
+}
+
+.slides-navigation a.next {
+    right: 40px
+}
+
+.slides-pagination {
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    text-align: center;
+    width: 100%
+}
+
+.slides-pagination a {
+    border: 2px solid #eee;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    width: 10px;
+    height: 10px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px;
+    text-indent: -999em;
+    overflow: hidden
+}
+
+.slides-pagination a.current {
+    background: #CE2A27
+}
+
+#slides .slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    background: #000;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid #bbb;
+    border-top: 1px solid rgba(225, 225, 225, .6)
+}
+
+#slides .slide-description {
+    text-align: center
+}
+
+#slides .slide-caption h3,
+#slides .slide-caption p,
+#slides .slide-description h3 {
+    color: #fff
+}
+
+.small-img span {
+    display: inline-block;
+    text-align: center
+}
+
+#slides .slide-description h3 {
+    font-size: 180%;
+    line-height: normal
+}
+
+#slides .slide-image {
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    position: relative
+}
+
+#slides .slide-image img {
+    position: absolute;
+    bottom: -2px
+}
+
+#slides .slide-description {
+    width: 100%;
+    margin: 100px auto 0
+}
+
+@-moz-document url-prefix() {
+    .css-rating-widget .uit-ratings .select-wrap {
+        position: relative;
+        padding-bottom: 0
+    }
+    .css-rating-widget .uit-ratings .fm-control .select select,
+    .css-rating-widget .uit-ratings .fm-control .select select:focus {
+        background: #fff;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none
+    }
+    .css-rating-widget .uit-ratings .select-wrap:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        pointer-events: none;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        background: none;
+        right: 1px;
+        top: 1px;
+        z-index: 99
+    }
+}
+
+.footer-main {
+    background-color: #FFF;
+    background-repeat: repeat-x;
+    background-image: -webkit-gradient(linear, left 0, left 100%, from(#eeedea), to(#FFF));
+    background-image: -webkit-linear-gradient(top, #eeedea, 0, #FFF, 100%);
+    background-image: -moz-linear-gradient(top, #eeedea 0, #FFF 100%);
+    background-image: linear-gradient(to bottom, #eeedea 0, #FFF 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffeeedea', endColorstr='#ffffffff', GradientType=0);
+    width: 100%;
+    border-top: 1px solid #FFF;
+    margin-top: -7em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    position: relative
+}
+
+.tall-footer {
+    padding: 25px 0
+}
+
+.footer {
+    background: #fff;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5
+}
+
+.footer li,
+.footer p {
+    font-size: .9em
+}
+
+.footer li {
+    padding: 2px 0
+}
+
+.footer li i {
+    font-size: 14px;
+    margin-right: 8px
+}
+
+.footer,
+.footer a,
+.footer h5 {
+    color: #666
+}
+
+.bottom-footer ul li a:hover,
+.footer ul li a:hover {
+    color: #0063D1;
+    text-decoration: underline
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666
+}
+
+.foob {
+    margin-top: 15px;
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: .9em
+}
+
+.footer .colm {
+    padding: 0 30px;
+    border-left: 1px dotted #E5E5E5
+}
+
+.footer .colm:first-child {
+    border-left: 0
+}
+
+.bottom-footer {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.bottom-footer ul {
+    text-align: left
+}
+
+.bottom-footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    border-right: 1px solid #E5E5E5;
+    font-size: 12px;
+    color: #666
+}
+
+.bottom-footer ul li a {
+    color: #666;
+    font-size: 12px
+}
+
+.bgx {
+    background: #6C82A2
+}
+
+.tagline span {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px 0;
+    font-weight: 300;
+    color: #00ACEE
+}
+
+.rating-container {
+    background: #fff;
+    margin: 40px auto;
+    max-width: 452px;
+    padding: 30px 35px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .65);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .65);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, .65);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .65)
+}
+
+.css-rating-widget,
+.css-rating-widget * {
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+@-moz-document url-prefix() {
+    .css-rating-widget .uit-ratings .select-wrap {
+        position: relative;
+        padding-bottom: 0
+    }
+    .css-rating-widget .uit-ratings .fm-control .select select,
+    .css-rating-widget .uit-ratings .fm-control .select select:focus {
+        background: #fff;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none
+    }
+    .css-rating-widget .uit-ratings .select-wrap:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        pointer-events: none;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        background: none;
+        right: 1px;
+        top: 1px;
+        z-index: 99
+    }
+}
+
+.uit-rating-wrapper {
+    display: block;
+    padding: 3px 0
+}
+
+.uit-rating-wrapper:after,
+.uit-rating-wrapper:before {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.uit-rating-wrapper:after {
+    clear: both
+}
+
+.uit-rating {
+    border: none;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    margin-top: -4px;
+    float: right
+}
+
+.uit-rating-wrapper>span {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: .85em;
+    float: left;
+    color: #777
+}
+
+.uit-rating label,
+.uit-rating label span,
+.uit-rating label:before {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none
+}
+
+.uit-rating label {
+    float: right
+}
+
+.uit-rating input {
+    border: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute!important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    opacity: 0
+}
+
+.uit-rating label:before {
+    margin: 5px;
+    font-size: 1.1em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005"
+}
+
+
+
+
+.uit-rating .sta-half:before {
+    content: "\f089";
+    position: absolute
+}
+
+.uit-rating input:checked~label,
+.uit-rating:hover label:hover,
+.uit-rating:hover label:hover~label {
+    color: #FFB801
+}
+
+.css-rating-widget .uit-rating:hover label:hover~label {
+    color: #FFED85
+}
+
+.uit-rating label span {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px rgba(255, 255, 255, 0);
+    -webkit-transition: margin .6s, opacity .6s;
+    -moz-transition: margin .6s, opacity .6s;
+    -ms-transition: margin .6s, opacity .6s;
+    -o-transition: margin .6s, opacity .6s;
+    transition: margin .6s, opacity .6s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    position: absolute;
+    padding: 5px 10px;
+    font-weight: 700;
+    background: #000;
+    font-size: 11px;
+    margin-left: 0;
+    display: block;
+    left: -9999px;
+    opacity: 0;
+    z-index: 10;
+    top: -80px;
+    color: #fff
+}
+
+.uit-rating label:hover span {
+    top: -25px;
+    opacity: 1;
+    left: auto
+}
+
+.uit-rating label span:before {
+    content: '';
+    position: absolute;
+    border-top: 4px solid #000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    left: 8px;
+    top: 100%
+}
+
+.blue-rating input:checked~label,
+.blue-rating:hover label:hover,
+.blue-rating:hover label:hover~label {
+    color: #438FFD
+}
+
+.blue-rating:hover label:hover~label {
+    color: #9BCDEE
+}
+
+
+.uit-rating label,
+.uit-rating:hover input~label,
+.uit-rating:hover label {
+    color: #DBE3E6
+}
+
+.medium-rating label:before {
+    font-size: 1.6em
+}
+
+.large-rating label:before {
+    font-size: 2.17em
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .uit-rating {
+        -webkit-animation: bugfix infinite 1s
+    }
+    @-webkit-keyframes bugfix {
+        from,
+        to {
+            padding: 0
+        }
+    }
+}
+
+
+
